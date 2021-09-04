@@ -66,7 +66,7 @@ public class TextController : MonoBehaviour
 
     private void PostToDatabase(){
         User user = new User();
-        RestClient.Post(url: "https://projectkappa-firebase-default-rtdb.asia-southeast1.firebasedatabase.app/" + "Project Kappa-Firebase" + TeamName1 + ".json", user);
-        //RestClient.Put(url: "https://projectkappa-firebase-default-rtdb.asia-southeast1.firebasedatabase.app/" + TeamName1 + ".json", user);
+        //RestClient.Post(url: "https://projectkappa-firebase-default-rtdb.asia-southeast1.firebasedatabase.app/" + "Project Kappa-Firebase" + TeamName1 + ".json", user);
+        RestClient.Put(url: "https://projectkappa-firebase-default-rtdb.asia-southeast1.firebasedatabase.app/" + TeamName1 + ".json", user);
     }
 }
